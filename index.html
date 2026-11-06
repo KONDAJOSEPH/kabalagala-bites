@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kabalagala Bites | Shawarma, Pizza, Platters and Fresh Food in Kabalagala, Kampala</title>
+<meta name="description" content="Full menu with prices, order on WhatsApp, and find us behind Shell Kabalagala, Ggaba Road.">
+<meta name="theme-color" content="#1a1a1a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kabalagala Bites | Shawarma, Pizza, Platters and Fresh Food">
+<meta property="og:description" content="Full menu with prices. Order on WhatsApp. Behind Shell Kabalagala, Ggaba Road, Kampala.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Kabalagala Bites","telephone":"+256779493747","servesCuisine":["Shawarma","Pizza","Fast food","Breakfast"],"priceRange":"UGX 3,000 - 40,000","openingHours":"Mo-Su 08:00-23:00","address":{"@type":"PostalAddress","streetAddress":"Behind Shell Kabalagala, Ggaba Road","addressLocality":"Kampala","addressCountry":"UG"}}
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<div class="topbar"><div class="wrap topbar-in">
+  <a href="tel:+256779493747">Call 0779 493 747</a>
+  <span id="openStatus" class="status">Checking hours…</span>
+  <span class="hide-sm">Behind Shell Kabalagala, Ggaba Road</span>
+</div></div>
+
+<header class="header"><div class="wrap header-in">
+  <a class="brand" href="#home">Kabalagala Bites</a>
+  <button class="theme-btn" id="themeBtn" aria-pressed="false" aria-label="Switch colour theme">Dark</button>
+  <button class="cart-btn" id="cartBtn" aria-label="Open your order">Your order <span id="cartCount">0</span></button>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  <nav class="nav" id="nav">
+    <a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a><a href="#book">Book</a><a href="#location">Find us</a><a href="#contact">Contact</a>
+    <a class="btn btn-green js-wa" href="#" data-open="order" data-msg="Hello Kabalagala Bites, I want to order.">Order Now</a>
+  </nav>
+</div></header>
+
+<main id="main">
+<section id="home" class="hero"><div class="wrap hero-in">
+  <div class="hero-text">
+    <h1>Shawarma, pizza, platters and fresh food in Kabalagala</h1>
+    <p>Fresh, tasty and affordable. Dine-in, takeaway and fast delivery in Kabalagala. Open daily, 8am to 11pm.</p>
+    <div class="row">
+      <a class="btn" href="#menu">View Menu</a>
+      <a class="btn btn-green js-wa" href="#" data-open="order" data-msg="Hello, I want to order.">Order on WhatsApp</a>
+    </div>
+  </div>
+  <img src="images/5.jpeg" alt="Roast chicken ready to serve at Kabalagala Bites" width="600" height="400">
+</div></section>
+
+<section class="offer"><div class="wrap offer-in">
+  <img src="images/12.jpeg" alt="" width="110" height="82">
+  <p><span class="badge" id="offerBadge">Every Friday</span> <strong>Friday Platter Offer.</strong> UGX 35,000 instead of 40,000. Chicken, chips, sausages and drinks for 4.</p>
+  <span class="countdown" id="countdown" aria-live="off"></span>
+  <a class="btn btn-dark js-wa" href="#" data-open-dish="Family Platter" data-msg="Hello Kabalagala Bites, I want the Friday Platter offer (UGX 35,000).">Get the offer</a>
+</div></section>
+
+<section id="about" class="section"><div class="wrap">
+  <h2>About us</h2>
+  <p class="sub">Behind Shell Kabalagala, Ggaba Road, Kampala</p>
+  <div class="about-grid">
+    <figure class="about-fig">
+      <img src="images/15.jpeg" alt="A fresh mango smoothie, one of our most loved drinks" width="600" height="750">
+      <figcaption>Fresh mango smoothie, made to order.</figcaption>
+    </figure>
+    <div class="about-copy">
+      <p class="about-text">Kabalagala Bites is your neighbourhood spot for fresh shawarma, roast chicken, grilled fish, pizza, burgers, platters and hearty breakfast plates. We cook fresh daily and serve with love.</p>
+      <p class="about-text">Whether you are passing by Ggaba Road or ordering from home, we deliver hot and fast. Add your dishes to your order, send them on WhatsApp, and we get cooking.</p>
+      <div class="stats" id="stats">
+        <div class="stat"><b data-count="15" id="statDishes">0</b><span>dishes on the menu</span></div>
+        <div class="stat"><b data-count="7">0</b><span>days open every week</span></div>
+        <div class="stat"><b data-count="15">0</b><span>minutes, usual prep time</span></div>
+        <div class="stat"><b data-count="4">0</b><span>menu sections</span></div>
+      </div>
+      <div class="row"><a class="btn" href="#menu">See the menu</a><a class="btn btn-outline" href="#book">Book a table</a></div>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature"><h3>Open daily</h3><p>8am to 11pm, 7 days a week</p></div>
+    <div class="feature"><h3>Fresh daily</h3><p>Cooked fresh, never frozen</p></div>
+    <div class="feature"><h3>Dine-in and takeaway</h3><p>Delivery inside Kabalagala</p></div>
+  </div>
+</div></section>
+
+<section id="menu" class="section tint"><div class="wrap">
+  <h2>Our menu</h2>
+  <p class="sub">Tap Order and WhatsApp opens with your choice already written.</p>
+  <div class="tabs" id="tabs" role="tablist">
+    <button class="tab active" data-cat="all">All</button>
+    <button class="tab" data-cat="Breakfast">Breakfast</button>
+    <button class="tab" data-cat="Local dishes">Local dishes</button>
+    <button class="tab" data-cat="Fast food and platters">Fast food and platters</button>
+    <button class="tab" data-cat="Drinks">Drinks</button>
+  </div>
+  <div class="menu-tools">
+    <div class="search"><input type="search" id="search" placeholder="Search the menu, for example pizza" aria-label="Search the menu"></div>
+    <label class="sort">Sort by
+      <select id="sort"><option value="default">Menu order</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
+    </label>
+  </div>
+  <div class="grid" id="menuGrid"></div>
+  <p class="no-results" id="noResults" hidden>Nothing matches your search. Try another word or tap All.</p>
+  <noscript><p>Please turn on JavaScript to see the menu, or call 0779 493 747.</p></noscript>
+</div></section>
+
+<section id="why" class="section"><div class="wrap">
+  <h2>Why choose us</h2>
+  <div class="features">
+    <div class="feature"><h3>Fast service</h3><p>Order in 2 minutes, ready in 15</p></div>
+    <div class="feature"><h3>Fresh ingredients</h3><p>Bought fresh every morning</p></div>
+    <div class="feature"><h3>Affordable</h3><p>A full meal from UGX 10,000</p></div>
+    <div class="feature"><h3>Delivery</h3><p>Anywhere in Kabalagala</p></div>
+  </div>
+</div></section>
+
+<section id="how" class="section dark"><div class="wrap">
+  <h2>How to order</h2>
+  <ol class="steps">
+    <li><strong>Pick your food.</strong> Choose from the menu.</li>
+    <li><strong>Tap Order.</strong> WhatsApp opens with your message ready.</li>
+    <li><strong>Send it.</strong> We confirm the time and your food is on the way.</li>
+  </ol>
+</div></section>
+
+<section id="info" class="section"><div class="wrap">
+  <h2>Delivery, payment and hours</h2>
+  <div class="cards3">
+    <div class="info-card"><h3>Delivery</h3><p>We deliver around Kabalagala, Muyenga, Ggaba Road and Kansanga. The delivery fee depends on distance and is confirmed on WhatsApp before we leave.</p></div>
+    <div class="info-card"><h3>Payment</h3><p>Pay cash on pickup or delivery, or send MTN Mobile Money or Airtel Money. Ask us for the number when you confirm your order.</p></div>
+    <div class="info-card"><h3>Opening hours</h3><table class="hours" id="hoursTable"><tbody></tbody></table></div>
+  </div>
+</div></section>
+
+<section id="gallery" class="section tint"><div class="wrap">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="images/9.jpeg" alt="Chicken shawarma on the spit" width="600" height="600" loading="lazy">
+    <img src="images/11.jpeg" alt="Loaded pizza" width="600" height="600" loading="lazy">
+    <img src="images/14.jpeg" alt="Fresh ginger and lemon drink" width="600" height="600" loading="lazy">
+    <img src="images/8.jpeg" alt="Grilled fish with lemon" width="600" height="600" loading="lazy">
+    <img src="images/15.jpeg" alt="Fresh mango smoothie" width="600" height="600" loading="lazy">
+    <img src="images/3.jpeg" alt="Beef burger" width="600" height="600" loading="lazy">
+  </div>
+</div></section>
+
+<section id="reviews" class="section"><div class="wrap">
+  <h2>What customers say</h2>
+  <div class="slider"><div class="track" id="track" tabindex="0" aria-label="Customer reviews">
+    <!-- REPLACE these sample reviews with the restaurant's REAL reviews from Facebook or Google -->
+    <figure class="review"><p class="stars">★★★★★</p><blockquote>Best platter in Kabalagala! I order every Friday.</blockquote><figcaption>Aisha N.</figcaption></figure>
+    <figure class="review"><p class="stars">★★★★★</p><blockquote>Shawarma is so fresh, delivery was very fast.</blockquote><figcaption>Daniel K.</figcaption></figure>
+    <figure class="review"><p class="stars">★★★★★</p><blockquote>Good prices, clean place, friendly staff.</blockquote><figcaption>Grace M.</figcaption></figure>
+    <figure class="review"><p class="stars">★★★★★</p><blockquote>The rolex special is huge. Perfect breakfast before work.</blockquote><figcaption>Brian S.</figcaption></figure>
+    <figure class="review"><p class="stars">★★★★★</p><blockquote>I ordered on WhatsApp and it was ready in 15 minutes.</blockquote><figcaption>Ritah A.</figcaption></figure>
+  </div>
+</div>
+    <div class="slider-ui"><button id="prev" type="button" aria-label="Previous review">&larr;</button><div class="dots" id="dots"></div><button id="next" type="button" aria-label="Next review">&rarr;</button></div>
+    </div></section>
+
+<section id="location" class="section tint"><div class="wrap loc">
+  <div>
+    <h2>Find us</h2>
+    <dl class="info">
+      <dt>Address</dt><dd>Behind Shell Kabalagala, Ggaba Road, Kabalagala, Kampala</dd>
+      <dt>Hours</dt><dd>Monday to Sunday, 8am to 11pm</dd>
+      <dt>Phone</dt><dd><a href="tel:+256779493747">+256 779 493 747</a></dd>
+    </dl>
+    <a class="btn" target="_blank" rel="noopener" href="https://maps.google.com/?q=Kabalagala,+Kampala">Get Directions</a>
+  </div>
+  <iframe title="Kabalagala Bites on Google Maps" loading="lazy" src="https://www.google.com/maps?q=Kabalagala,Kampala&output=embed"></iframe>
+</div></section>
+
+<section id="book" class="section"><div class="wrap loc">
+  <div>
+    <h2>Book a table</h2>
+    <p class="sub left">Coming with family or friends? Tell us when and how many, and we will keep a table for you.</p>
+    <ul class="contact-list"><li>We confirm your booking on WhatsApp.</li><li>Groups of 8 or more, please book a day before.</li></ul>
+  </div>
+  <form id="bookForm" novalidate>
+    <label>Your name<input type="text" id="bName" required autocomplete="name"></label>
+    <label>Phone number<input type="tel" id="bPhone" required autocomplete="tel"></label>
+    <div class="form-row">
+      <label>Date<input type="date" id="bDate" required></label>
+      <label>Time<input type="time" id="bTime" required value="19:00"></label>
+    </div>
+    <label>Number of people<input type="number" id="bGuests" min="1" max="30" value="2" required></label>
+    <p class="error" id="bookError" role="alert"></p>
+    <button class="btn btn-green" type="submit">Book on WhatsApp</button>
+  </form>
+</div></section>
+
+<section id="faq" class="section tint"><div class="wrap narrow">
+  <h2>Questions people ask</h2>
+  <details><summary>How do I order?</summary><p>Tap Order now on any dish, or add several dishes to your order and send them together on WhatsApp.</p></details>
+  <details><summary>How long does food take?</summary><p>Most orders are ready in about 15 minutes. Delivery time depends on how far you are.</p></details>
+  <details><summary>Do you deliver?</summary><p>Yes, inside Kabalagala and nearby areas. The fee is confirmed on WhatsApp.</p></details>
+  <details><summary>Can I pay with Mobile Money?</summary><p>Yes. We accept cash, MTN Mobile Money and Airtel Money.</p></details>
+  <details><summary>Do you cook for parties and offices?</summary><p>Yes. Message us the number of people and the date and we will send you a price.</p></details>
+</div></section>
+
+<section id="offers" class="section"><div class="wrap narrow offers">
+  <h2>Get offers on WhatsApp</h2>
+  <p class="sub">Leave your number and we will message you when there is a new offer. No spam.</p>
+  <form id="offerForm" class="inline-form" novalidate>
+    <input type="tel" id="oPhone" placeholder="Your phone number" aria-label="Your phone number" autocomplete="tel" required>
+    <button class="btn" type="submit">Join the list</button>
+  </form>
+  <p class="error" id="offerError" role="alert"></p>
+</div></section>
+
+<section id="contact" class="section"><div class="wrap loc">
+  <div>
+    <h2>Contact us</h2>
+    <p class="sub left">Call, WhatsApp or send a message.</p>
+    <ul class="contact-list">
+      <li>Phone: <a href="tel:+256779493747">+256 779 493 747</a></li>
+      <li>WhatsApp: <a class="js-wa" href="#" data-msg="Hello Kabalagala Bites, I have a question.">Chat with us</a></li>
+      <li>Instagram: @kabalagalabites</li>
+      <li>Facebook: Kabalagala Bites</li>
+      <li>TikTok: @kabalagalabites</li>
+    </ul>
+  </div>
+  <form id="contactForm" novalidate>
+    <label>Your name<input type="text" id="fName" required autocomplete="name"></label>
+    <label>Phone number<input type="tel" id="fPhone" required autocomplete="tel"></label>
+    <label>Your message<textarea id="fMsg" rows="4"></textarea></label>
+    <p class="error" id="formError" role="alert"></p>
+    <button class="btn btn-green" type="submit">Send on WhatsApp</button>
+  </form>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p><strong>Kabalagala Bites</strong> | <a href="#home">Home</a> | <a href="#menu">Menu</a> | <a href="#contact">Contact</a></p>
+  <p>Open daily 8am to 11pm | Ggaba Road, Kabalagala</p>
+  <p>&copy; <span id="year">2026</span> Kabalagala Bites. All rights reserved.</p>
+  <p><button class="share-btn" id="shareBtn" type="button">Share this website</button></p>
+  <p class="powered">Powered by <a class="js-wa" href="#" data-number="256779493747" data-msg="Hello, I saw the Kabalagala Bites website and I want one for my business.">Konda Joseph Konda - Web Developer</a></p>
+</div></footer>
+
+<a class="float-wa js-wa" href="#" data-open="order" data-msg="Hello Kabalagala Bites, I want to order." aria-label="Order on WhatsApp">Order on WhatsApp</a>
+<button class="to-top" id="toTop" aria-label="Back to top" hidden>&uarr;</button>
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" inert>
+  <div class="drawer-head"><h2 id="drawerTitle">Your order</h2><button class="x" id="drawerClose" aria-label="Close your order">&times;</button></div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot">
+    <div class="opt"><label><input type="radio" name="mode" value="Pickup" checked> Pickup</label><label><input type="radio" name="mode" value="Delivery"> Delivery</label></div>
+    <input id="cName" placeholder="Your name" autocomplete="name">
+    <input id="cArea" placeholder="Delivery area or landmark" hidden>
+    <div class="total"><span>Total</span><strong id="cartTotal">UGX 0</strong></div>
+    <p class="note">Delivery fee is confirmed with you on WhatsApp.</p>
+    <button class="btn btn-green" id="sendOrder" type="button">Send order on WhatsApp</button>
+    <button class="link-btn" id="clearCart" type="button">Clear order</button>
+  </div>
+</aside>
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo"><button class="x" id="lbClose" aria-label="Close photo">&times;</button><img id="lbImg" alt=""></div>
+<div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="omTitle" hidden>
+  <div class="modal-box">
+    <div class="modal-head"><h2 id="omTitle">What would you like?</h2><button class="x" data-close type="button" aria-label="Close">&times;</button></div>
+    <div class="chips" id="omChips"></div>
+    <div class="om-grid" id="omGrid"></div>
+    <div class="modal-foot"><button class="btn btn-outline" id="omCart" type="button">View your order</button><a class="btn btn-outline js-wa" href="#" data-msg="Hello Kabalagala Bites, I have a question.">Just chat with us</a></div>
+  </div>
+</div>
+<div class="modal" id="dishModal" role="dialog" aria-modal="true" aria-labelledby="dmName" hidden>
+  <div class="modal-box dish">
+    <button class="x dish-x" data-close type="button" aria-label="Close">&times;</button>
+    <img id="dmImg" src="" alt="" width="600" height="600">
+    <div class="dish-body">
+      <span class="tag" id="dmTag" hidden></span>
+      <h2 id="dmName"></h2>
+      <p id="dmDesc"></p>
+      <div class="price" id="dmPrice"></div>
+      <div class="qty-row"><span>Quantity</span><div class="qty"><button type="button" id="dmMinus" aria-label="One less">&minus;</button><span id="dmQty">1</span><button type="button" id="dmPlus" aria-label="One more">+</button></div></div>
+      <a class="btn btn-green" id="dmWa" target="_blank" rel="noopener" href="#">Order on WhatsApp</a>
+      <button class="btn btn-outline" id="dmAdd" type="button">Add to order</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
