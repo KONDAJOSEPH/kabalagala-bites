@@ -26,6 +26,7 @@
 
 <header class="header"><div class="wrap header-in">
   <a class="brand" href="#home">Kabalagala Bites</a>
+  <button class="lang-btn" id="langBtn" type="button" aria-label="التبديل إلى العربية">العربية</button>
   <button class="theme-btn" id="themeBtn" aria-pressed="false" aria-label="Switch colour theme">Dark</button>
   <button class="cart-btn" id="cartBtn" aria-label="Open your order">Your order <span id="cartCount">0</span></button>
   <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
@@ -92,7 +93,9 @@
     <button class="tab" data-cat="Local dishes">Local dishes</button>
     <button class="tab" data-cat="Fast food and platters">Fast food and platters</button>
     <button class="tab" data-cat="Drinks">Drinks</button>
+    <button class="tab" data-cat="fav">Favourites</button>
   </div>
+  <div class="diet" id="diet" role="group" aria-label="Filter the menu"><button class="chip" type="button" data-diet="veg" aria-pressed="false">Vegetarian</button><button class="chip" type="button" data-diet="spicy" aria-pressed="false">Spicy</button></div>
   <div class="menu-tools">
     <div class="search"><input type="search" id="search" placeholder="Search the menu, for example pizza" aria-label="Search the menu"></div>
     <label class="sort">Sort by
@@ -151,7 +154,7 @@
     <figure class="review"><p class="stars">★★★★★</p><blockquote>Best platter in Kabalagala! I order every Friday.</blockquote><figcaption>Aisha N.</figcaption></figure>
     <figure class="review"><p class="stars">★★★★★</p><blockquote>Shawarma is so fresh, delivery was very fast.</blockquote><figcaption>Daniel K.</figcaption></figure>
     <figure class="review"><p class="stars">★★★★★</p><blockquote>Good prices, clean place, friendly staff.</blockquote><figcaption>Grace M.</figcaption></figure>
-    <figure class="review"><p class="stars">★★★★★</p><blockquote>The rolex special is huge. Perfect breakfast before work.</blockquote><figcaption>Brian S.</figcaption></figure>
+    <figure class="review"><p class="stars">★★★★★</p><blockquote>The breakfast plate is huge. Perfect before work.</blockquote><figcaption>Brian S.</figcaption></figure>
     <figure class="review"><p class="stars">★★★★★</p><blockquote>I ordered on WhatsApp and it was ready in 15 minutes.</blockquote><figcaption>Ritah A.</figcaption></figure>
   </div>
 </div>
@@ -246,10 +249,23 @@
   <div class="drawer-head"><h2 id="drawerTitle">Your order</h2><button class="x" id="drawerClose" aria-label="Close your order">&times;</button></div>
   <div class="drawer-body" id="cartItems"></div>
   <div class="drawer-foot">
-    <div class="opt"><label><input type="radio" name="mode" value="Pickup" checked> Pickup</label><label><input type="radio" name="mode" value="Delivery"> Delivery</label></div>
+    <button class="link-btn again" id="repeatOrder" type="button" hidden>Repeat my last order</button>
+    <div class="opt" role="group" aria-label="Delivery or pickup"><label><input type="radio" name="mode" value="Pickup" checked> Pickup</label><label><input type="radio" name="mode" value="Delivery"> Delivery</label></div>
     <input id="cName" placeholder="Your name" autocomplete="name">
-    <input id="cArea" placeholder="Delivery area or landmark" hidden>
-    <div class="total"><span>Total</span><strong id="cartTotal">UGX 0</strong></div>
+    <div id="deliveryBox" class="dbox" hidden>
+      <select id="cAreaSel" aria-label="Choose your area"></select>
+      <input id="cArea" placeholder="Street, house or landmark">
+      <div class="locrow"><button class="link-btn" id="shareLoc" type="button">Share my location</button><span id="locStatus" role="status"></span></div>
+    </div>
+    <div class="two">
+      <label>When<select id="cWhen"><option value="asap">As soon as possible</option><option value="later">Choose a time</option></select></label>
+      <label>Payment<select id="cPay" aria-label="Payment method"><option value="Cash">Cash</option><option value="MTN Mobile Money">MTN Mobile Money</option><option value="Airtel Money">Airtel Money</option></select></label>
+    </div>
+    <input id="cTime" type="time" aria-label="Planned time" hidden>
+    <textarea id="cNote" rows="2" placeholder="Notes or allergies (optional)"></textarea>
+    <div class="promo"><input id="cPromo" placeholder="Promo code" aria-label="Promo code" autocomplete="off"><button class="btn btn-outline" id="applyPromo" type="button">Apply</button></div>
+    <div class="sums" id="sums"></div>
+    <p class="eta" id="eta" role="status"></p>
     <p class="note">Delivery fee is confirmed with you on WhatsApp.</p>
     <button class="btn btn-green" id="sendOrder" type="button">Send order on WhatsApp</button>
     <button class="link-btn" id="clearCart" type="button">Clear order</button>
@@ -274,12 +290,14 @@
       <p id="dmDesc"></p>
       <div class="price" id="dmPrice"></div>
       <div class="qty-row"><span>Quantity</span><div class="qty"><button type="button" id="dmMinus" aria-label="One less">&minus;</button><span id="dmQty">1</span><button type="button" id="dmPlus" aria-label="One more">+</button></div></div>
+      <p class="allergy">Allergies? Tell us when you order.</p>
       <a class="btn btn-green" id="dmWa" target="_blank" rel="noopener" href="#">Order on WhatsApp</a>
       <button class="btn btn-outline" id="dmAdd" type="button">Add to order</button>
     </div>
   </div>
 </div>
 <div class="toast" id="toast" role="status"></div>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
